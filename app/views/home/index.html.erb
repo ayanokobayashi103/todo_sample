@@ -1,5 +1,9 @@
 <div id="app">
   <navbar></navbar>
+  <!-- コンポーネントが表示される部分をindex.html.erbに作ります -->
+  <div class="container">
+    <router-view></router-view>
+  </div>
 </div>
 <!-- javascript_pack_tagを使用することで、app/javascript/packs以下のJSファイルを探してくれる -->
 <%= javascript_pack_tag 'todo' %>
