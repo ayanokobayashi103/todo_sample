@@ -1,25 +1,28 @@
-# README
+# Vue+Rails練習アプリ
+### 目的
+frontendはVue.js、backendがRailsというアプリの大まかな作りを学ぶ  
+下記のQiita記事でVue.jsとRailsのアプリを作ってみる。  
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[Vue.jsとRailsでTODOアプリのチュートリアルみたいなものを作ってみた](https://qiita.com/naoki85/items/51a8b0f2cbf949d08b11#axios%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6api%E9%80%9A%E4%BF%A1)
 
-Things you may want to cover:
+起動方法  
+`
+bin/server  
+`  
+localhost:5000
 
-* Ruby version
+## Gem
+  * gem 'foreman'
+  * gem 'jquery-rails'
+  * gem 'materialize-sass' (cssのフレームワーク)
+  * gem 'material_icons'
 
-* System dependencies
+## HTTPライブラリ
+  [https://axios-http.com/](https://axios-http.com/)  
+  下記の様に記述するとAPI通信ができる様になる  
+  `import axios from 'axios';`  
+  `axios.get('/api/tasks').then((response) => {`  
+  `axios.post('/api/tasks', { task: { name: this.newTask } }).then((response) => {`
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# todo_sample
+## Vue-Router
+  [https://router.vuejs.org/ja/](https://router.vuejs.org/ja/)
